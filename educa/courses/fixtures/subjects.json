@@ -1,0 +1,26 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Computer Architecture",
+    "slug": "computer-architecture"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Data Structure",
+    "slug": "data-structure"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Hadoop",
+    "slug": "hadoop"
+  }
+}
+]
