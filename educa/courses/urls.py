@@ -48,4 +48,14 @@ urlpatterns = [
         ModuleContentListView.as_view(),
         name='module_content_list'
     ),
+    path(
+        'module/order/',
+        ModuleOrderView.as_view(),
+        name='module_order'
+    ),
+    path(
+        'content/order/',
+        ContentOrderView.as_view(),
+        name='content_order'
+    ),
 ]
