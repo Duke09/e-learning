@@ -39,6 +39,11 @@ urlpatterns = [
         name='course_list'
     ),
     path('students/', include('students.urls')),
+    # api
+    path(
+        'api/',
+        include('courses.api.urls', namespace='api'),
+    )
 ]
 
 if settings.DEBUG:
