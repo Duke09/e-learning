@@ -22,3 +22,6 @@ class CourseAdmin(admin.ModelAdmin):
         'slug': ('title',)
     }
     inlines = [ModuleInine]
+
+# user memcache admin index site
+admin.site.index_template = 'memcache_status/admin_index.html'
