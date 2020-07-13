@@ -1,6 +1,10 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
 
 from .views import *
+
+router = routers.DefaultRouter()
+router.register('courses', CourseViewSet)
 
 app_name = 'courses'
 
@@ -15,4 +19,10 @@ urlpatterns = [
         SubjectDetailView.as_view(),
         name='subject_detail'
     ),
+    # path(
+    #     'courses/<pk>/enroll/',
+    #     CourseEnrollView.as_view(),
+    #     name='course_enroll',
+    # ),
+    path('', include(router.urls)),
 ]
