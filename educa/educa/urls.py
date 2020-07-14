@@ -39,6 +39,7 @@ urlpatterns = [
         name='course_list'
     ),
     path('students/', include('students.urls')),
+    path('chat/', include('chat.urls', namespace='chat')),
     # api
     path(
         'api/',
