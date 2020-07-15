@@ -69,10 +69,15 @@ h1 {
 }
 
 #header .menu {
+    display: flex;
     list-style:none;
     float:right;
     margin:0;
     padding:0;
+}
+
+#header .menu li{
+    margin-right: 1em;
 }
 
 .contents {
